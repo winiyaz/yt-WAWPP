@@ -1,6 +1,7 @@
 
 1. [WORK1](#work1)
 2. [Targets](#targets)
+3. [Important commands](#important-commands)
 
 
 # WORK1
@@ -19,3 +20,10 @@ user_agent = "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro) AppleWebKit/537.
 # Targets 
 
 1. https://www.coingecko.com/ - Get data in DF version 
+2. https://playwright.dev/python/docs/intro - This is the main source you will use 
+
+# Important commands 
+
+1. When installing [`playwright`](https://playwright.dev/python/docs/intro)
+- with UV do 
+- `uv add pytest-plawwright`  - This ensures all the required dependencies are installed
