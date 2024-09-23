@@ -17,7 +17,13 @@ def m_F1():
         br1 = p.chromium.launch()
 
         # Create a new browser context
-        context = br1.new_context(record_video_dir="clicks/", user_agent=uA)
+        context_config = {
+            "record_video_dir": "clicks/",
+            "user_agent": uA,
+            "locale": "de-DE",
+            "timezone_id": "Europe/Berlin",
+        }
+        context = br1.new_context(**context_config)
 
         # Create a new page
         page1 = context.new_page()
