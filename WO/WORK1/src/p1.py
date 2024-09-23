@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright
 from datetime import datetime, timezone
 
 # Target and userAgent
-url = "https://www.coingecko.com/"
+url = "https://www.meanbitches.com/"
 uA = "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
 
 
