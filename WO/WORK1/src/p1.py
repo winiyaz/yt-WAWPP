@@ -4,8 +4,9 @@ from playwright.sync_api import sync_playwright
 from datetime import datetime, timezone
 
 # Target and userAgent
-url = "https://www.meanbitches.com/"
+url = "https://www.coingecko.com/"
 uA = "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
+c_d = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
 
 # Actual Code here
@@ -15,6 +16,9 @@ def m_F1():
         # Launch broser
         br1 = p.chromium.launch()
 
+        # Create a new browser context
+        context = br1.new_context(record_video_dir="clicks/")
+
         # Create a new page
         page1 = br1.new_page(user_agent=uA)
 
@@ -22,8 +26,11 @@ def m_F1():
         page1.goto(url)
 
         # Create sreenshot - wih current date time
-        c_d = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
         page1.screenshot(path=f"clicks/{c_d}-s1.png", full_page=True)
+
+        # Close the page and then the context
+        page1.close()
+        context.close()
 
         # Close the browser
         br1.close()
