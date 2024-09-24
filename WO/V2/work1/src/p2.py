@@ -9,7 +9,6 @@ install(show_locals=True)
 # Target and userAgent
 urls = [
     "https://www.coingecko.com/",
-    "https://coinmarketcap.com/",
     "https://www.meanbitches.com/",
 ]
 uA = "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
@@ -41,7 +40,7 @@ def m_F2():
             page1.goto(url)
 
             # Create screenshot
-            page1.screenshot(path=f"clicks/{url}{c_d}-s{index+1}.png", full_page=True)
+            page1.screenshot(path=f"clicks/{c_d}-s{index+1}.png", full_page=True)
 
             # Close the page
             page1.close()
