@@ -1,8 +1,5 @@
 from src.ban import banner
-from rich.traceback import install
 from src.p2 import m_F2
-
-install(show_locals=True)
 
 
 def main():
