@@ -47,7 +47,7 @@ def m_F4():
             context.close()
 
             # Wait for 2 seconds to allow the video file to be written
-            time.sleep(2)
+            time.sleep(4)
 
             # Rename the video file
             for filename in os.listdir("clicks/"):
@@ -56,6 +56,8 @@ def m_F4():
 
         # Close the browser
         br1.close()
+
+    print("RAPED ALL!")
 
 
 m_F4()
