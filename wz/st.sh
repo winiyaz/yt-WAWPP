@@ -80,7 +80,7 @@ echo ""
 echo "############### BREW INSTALLS ###############"
 echo "############### BREW INSTALLS ###############"
 echo "############### BREW INSTALLS ###############"
-brew install fzf helix
+brew install fzf helix btop
 yes | /home/linuxbrew/.linuxbrew/opt/fzf/install
 fzf_key_bindings
 echo ""
