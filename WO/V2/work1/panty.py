@@ -1,13 +1,13 @@
 from src.ban import banner
 from rich.traceback import install
-from src.p1 import m_F1
+from src.p2 import m_F2
 
 install(show_locals=True)
 
 
 def main():
-    banner("Continuing work from \n V1 - p1.py")
-    m_F1()
+    banner("Execute p2.py - Loops through list of urls and creates screenshots")
+    m_F2()
 
 
 if __name__ == "__main__":
