@@ -26,6 +26,7 @@ def m_F1():
         # Create a new browser context
         context_config = {
             "record_video_dir": "clicks/",
+            "record_video_size": {"width": 640, "height": 480},
             "user_agent": uA,
             "locale": "de-DE",
             "timezone_id": "Europe/Berlin",
