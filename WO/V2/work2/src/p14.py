@@ -17,7 +17,7 @@ uA = "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTM
 c_d = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
 
-def p13F():
+def p14F():
     """All operations will be in this function"""
     rprint("[bold magenta]Starting Playwright Script...[/bold magenta]")
     with sync_playwright() as p:
@@ -56,14 +56,12 @@ def p13F():
                 page1.close()
 
                 # Wait for the video file to be created
-                time.sleep(2)
+                video_path = f"clicks/video-{domain}.webm"
+                while not os.path.exists(video_path):
+                    time.sleep(0.1)
 
                 # Rename the video file to the domain name
-                for filename in os.listdir("clicks/"):
-                    if filename.startswith("video-") and filename.endswith(".webm"):
-                        # Add a delay before renaming the file
-                        time.sleep(1)
-                        os.rename(f"clicks/{filename}", f"clicks/{c_d}-{domain}.webm")
+                os.rename(video_path, f"clicks/{c_d}-{domain}.webm")
 
         finally:
             rprint("[bold yellow]Closing browser context and browser...[/bold yellow]")
