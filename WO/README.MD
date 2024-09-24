@@ -27,3 +27,4 @@ Dir | What?
 
 - Note there are some problems with how you are handling requests , so put a pin in this, come back after completing the course 
 - Main AIM was to create a tool for getting screnshots of website. But this can be done after you understand how to rename files, after it is being written. Or after understanding what more actions can be done on the page.
+- Did many experiments in [`WO/V1`](./V1/) and came across some troubles, will now continue the work in [`WO/V2`](./V2/) with some of the files from pervious version as a continuation
