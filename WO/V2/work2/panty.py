@@ -1,5 +1,15 @@
+# --- imports
+from rich.traceback import install
+from src.ban import banner
+from src.p1 import p1F
+
+install(show_locals=True)
+# ----
+
+
 def main():
-    print("Hello from work2!")
+    banner("Work Continuation Here")
+    p1F()
 
 
 if __name__ == "__main__":
