@@ -1,11 +1,11 @@
 #!/bin/fish
-/workspace/addbannrzzz/wz/pnp.fish
-/workspace/addbannrzzz/wz/fixrs.fish
-/workspace/addbannrzzz/wz/st.sh
-/workspace/addbannrzzz/wz/aryt.fish
-/workspace/addbannrzzz/wz/tgpt.fish
-/workspace/addbannrzzz/wz/bun.fish
-/workspace/addbannrzzz/wz/uv.fish
-/workspace/addbannrzzz/wz/tmuxx.fish
+/workspaces/yt-WAWPP/wz/pnp.fish
+/workspaces/yt-WAWPP/wz/fixrs.fish
+/workspaces/yt-WAWPP/wz/st.sh
+/workspaces/yt-WAWPP/wz/aryt.fish
+/workspaces/yt-WAWPP/wz/tgpt.fish
+/workspaces/yt-WAWPP/wz/bun.fish
+/workspaces/yt-WAWPP/wz/uv.fish
+/workspaces/yt-WAWPP/wz/tmuxx.fish
 
 
