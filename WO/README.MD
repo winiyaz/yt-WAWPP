@@ -17,3 +17,9 @@ https://dub.sh/63IVjxw
 1. Actual work being done here
 
 ## Dir Description 
+
+1. Since you are discovering new things there will be multiple versions of the same work which will be used as your tools 
+
+Dir | What?
+--- | --- 
+[`WORK1`](./WORK1/) | 1st version of the work, this one records screenshots and videos. Will make a copy of this to continue the study work
