@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 url = [
     "https://www.coingecko.com/",
     "https://www.coinwatch.com/",
-    "https://www.meabitches.com/",
+    "https://www.meanbitches.com/",
 ]
 uA = "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
 c_d = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")

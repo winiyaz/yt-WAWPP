@@ -2,6 +2,9 @@
 from src.p1 import m_F1
 from src.p2 import m_F2
 from src.ban import banner
+from rich.traceback import install
+
+install(show_locals=True)
 
 
 def main():
