@@ -23,3 +23,4 @@ https://dub.sh/63IVjxw
 Dir | What?
 --- | --- 
 [`WORK1`](./WORK1/) | 1st version of the work, this one records screenshots and videos. Will make a copy of this to continue the study work
+[`WORK2`](./WORK2/) | 2nd version of the work, Testing out list of targets as a python list
