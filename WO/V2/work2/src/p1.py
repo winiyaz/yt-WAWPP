@@ -45,7 +45,7 @@ def p1F():
 
                 rprint(f"[bold cyan]Taking screenshot of {pageVisit}...[/bold cyan]")
                 # Create screenshot - with current date time
-                page1.screenshot(path=f"clicks/{c_d}-s{index+1}.png", full_page=True)
+                page1.screenshot(path=f"clicks/{c_d}-s{pageVisit}.png", full_page=True)
 
                 rprint(f"[bold green]Closing page {pageVisit}...[/bold green]")
                 # Close the page
