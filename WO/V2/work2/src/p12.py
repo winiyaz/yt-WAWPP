@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from rich import print as rprint  # For rprinting
 from rich.traceback import install
 import os
+import time
 
 install(show_locals=True)
 
@@ -16,7 +17,7 @@ uA = "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTM
 c_d = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
 
-def p1F():
+def p12F():
     """All operations will be in this function"""
     rprint("[bold magenta]Starting Playwright Script...[/bold magenta]")
     with sync_playwright() as p:
@@ -43,13 +44,24 @@ def p1F():
                 # Visit the page specified
                 page1.goto(pageVisit)
 
+                # Extract the domain name from the URL
+                domain = pageVisit.split("//")[-1].split("/")[0]
+
                 rprint(f"[bold cyan]Taking screenshot of {pageVisit}...[/bold cyan]")
-                # Create screenshot - with current date time
-                page1.screenshot(path=f"clicks/{c_d}-{pageVisit}.png", full_page=True)
+                # Create screenshot - with current date time and domain name
+                page1.screenshot(path=f"clicks/{c_d}-{domain}.png", full_page=True)
 
                 rprint(f"[bold green]Closing page {pageVisit}...[/bold green]")
                 # Close the page
                 page1.close()
+
+                # Wait for the video file to be created
+                time.sleep(2)
+
+                # Rename the video file to the domain name
+                for filename in os.listdir("clicks/"):
+                    if filename.startswith("video-") and filename.endswith(".webm"):
+                        os.rename(f"clicks/{filename}", f"clicks/{c_d}-{domain}.webm")
 
         finally:
             rprint("[bold yellow]Closing browser context and browser...[/bold yellow]")
