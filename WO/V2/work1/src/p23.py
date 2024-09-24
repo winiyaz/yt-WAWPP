@@ -58,6 +58,3 @@ def m_F23():
 
         rprint("[bold magenta]Done! URLs: [/bold magenta]")
         rprint(f"[bold cyan]{urls}[/bold cyan]")
-
-
-m_F23()
